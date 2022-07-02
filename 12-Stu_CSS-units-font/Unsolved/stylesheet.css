@@ -1,0 +1,16 @@
+.lesson1 {
+  background-color: rgb(249, 249, 150);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.lesson2 {
+  font-size: 24px;
+  background-color: rgb(249, 249, 150);
+  font-family: lucina Grande;
+}
+
+.lesson3 {
+  line-height: 50px;
+  background-color: rgb(249, 249, 150);
+  font-family: sans-serif;
+}
