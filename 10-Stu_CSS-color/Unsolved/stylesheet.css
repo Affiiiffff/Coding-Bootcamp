@@ -1,0 +1,20 @@
+.lesson1 {
+  background-color: purple;
+  width: 150px;
+  height: 75px;
+}
+.lesson2 {
+  background-color: blue;
+  width: 150px;
+  height: 75px;
+  color: orange;
+}
+
+.container {
+  background-color: black;
+  color: white;
+}
+
+.sec6 {
+  color: yellow;
+}
