@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>HTML Display</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
+  <style>
+    #item1 {
+      display: inline;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(190, 46, 85);
+    }
+    #item2 {
+      display: inline;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+    }
+
+    #item3 {
+      display: inline;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(24, 121, 24);
+    }
+
+    .div1 {
+      margin-left: 350px;
+    }
+    .div2 {
+      margin-left: 350px;
+    }
+  </style>
 
   <body>
     <header>
       <h2>HTML Display</h2>
       <nav>
         <ul>
-          <li id="item-1">LIST ITEM 1</li>
-          <li id="item-2">LIST ITEM 2</li>
-          <li id="item-3">LIST ITEM 3</li>
+          <li id="item1">LIST ITEM 1</li>
+          <li id="item2">LIST ITEM 2</li>
+          <li id="item3">LIST ITEM 3</li>
         </ul>
       </nav>
     </header>
-    
-    <section>
-      <img src="./assets/images/image-1.png" alt="box with number 1"/>
-      <img src="./assets/images/image-2.png" alt="box with number 2"/> 
-      <img id="image-3" src="./assets/images/image-3.png" alt="box with number 3"/> 
-    </section>
-  </body>
 
+    ,
+    <div class="div1">
+      <img
+        class="box1"
+        src="./assets/images/image-1.png"
+        alt="box with number 1"
+      />
+    </div>
+
+    <div class="div2">
+      <img src="./assets/images/image-2.png" alt="box with number 2" /> <img
+    </div>
+    <div><img src="./assets/images/image-3.png" alt="" /></div>
+  </body>
 </html>
