@@ -70,6 +70,9 @@ footer {
   padding: 10px;
   margin: 20px;
   flex: 0 0 300px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #13293d;
+  transform: rotate(5deg);
 }
 
 .card header {
