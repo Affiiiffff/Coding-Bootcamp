@@ -6,17 +6,17 @@ var five = "Howdy!";
 var six;
 
 // Insert comments to explain what each console log below will log to the console
-console.log(typeof one);
+console.log(typeof one); // number
 Number;
-console.log(typeof two);
+console.log(typeof two); // string
 String;
-console.log(typeof three);
+console.log(typeof three); // boolean
 Boolean;
-console.log(typeof four);
+console.log(typeof four); //number
 Number;
-console.log(typeof five);
+console.log(typeof five); // string
 String;
-console.log(typeof six);
+console.log(typeof six); // undefined
 undefined;
 
 four = "Hello!";
