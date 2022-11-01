@@ -1,5 +1,5 @@
-const express = require('express');
-const mongodb = require('mongodb').MongoClient;
+const express = require("express");
+const mongodb = require("mongodb").MongoClient;
 
 const app = express();
 const port = 3001;
@@ -28,12 +28,12 @@ mongodb.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err, client) => {
     db = client.db();
-    db.collection('numberList').deleteMany({});
-    db.collection('numberList').insertMany(data, (err, res) => {
+    db.collection("numberList").deleteMany({});
+    db.collection("numberList").insertMany(data, (err, res) => {
       if (err) {
         return console.log(err);
       }
-      console.log('Data inserted');
+      console.log("Data inserted");
     });
 
     app.listen(port, () => {
@@ -45,9 +45,13 @@ mongodb.connect(
 app.use(express.json());
 
 // TODO: Update route to use cursor methods
-app.get('/read', (req, res) => {
-  db.collection('numberList')
+app.get("/read", (req, res) => {
+  db.collection("numberList")
     .find()
+    .sort({ number: -1 })
+    .limit(5)
+    .skip(5)
+
     .toArray((err, results) => {
       if (err) throw err;
       res.send(results);
